@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Game home</title>
+        <meta name="description" content="Game">
+        <meta name="author" content="Rebecca">
+        <link rel="stylesheet" href="CSS/style.css"> 
+    </head>
+    <body>
+<div class="container">
+    <div class="row">
+        <div class="two-thirds column">
+        <h2>Quiz de personalidade</h2>
+
+        <div id="progress_bar"></div>
+        <button>Enviar Resposta</button>
+ 
+    <script type="text/javascript">
+        function nextQuestion(question_number){
+    var current_question_number = question_number - 1;
+    var question_number = question_number.toString();
+    var current_question_number = current_question_number.toString();
+
+    var el = document.getElementById('question-'+question_number);
+    var el2 = document.getElementById('question-'+current_question_number);
+
+}
+ </script>
+        <form class="questions_box">
+        <div id="question-1">
+            <h2>Questão 1</h2>
+              <h3>Imagine que você está com amigos em um restaurante e um deles decide não pagar a conta, o que você faz?</h3>
+              <input id="question-1-answer-a" type="radio" name="favelang" value=1> Você fica revoltado e toma a frente da situação, explicando para o seu amigo que isso é injusto com os demais. Se recusa a pagar a parte dele, incentivando os outros a se posicionar contra o pagamento.<br>
+              <input id="question-1-answer-b" type="radio" name="favelang" value=2> Com tranquilidade tenta resolver a situação. Caso o amigo se recuse a pagar a conta resolve não criar polêmicas e aceita, porém, vai pensar duas vezes antes de sair com esse amigo de novo.<br>
+              <input id="question-1-answer-c" type="radio" name="favelang" value=3> Você fica profundamente magoado com o seu amigo. Resolve não criar polêmicas, paga a conta mas fica muito chateado.<br>
+              <input id="question-1-answer-d" type="radio" name="favelang" value=4> Tenta apaziguar a situação e conversa com o amigo para ver o que aconteceu, se ele está atravessando uma situação financeira difícil. Caso você goste muito do amigo oferece dinheiro para ele pagar a conta.<br>
+              <input id="question-1-answer-e" type="radio" name="favelang" value=5> Você fica irritado com a situação, argumenta com o amigo que aquilo é um absurdo. Pode até vir a pagar a conta mas com certeza vai riscar essa pessoa da suas amizades pois não é honesta.<br>
+             <div id="submit1"></div>
+             <button onclick="nextQuestion()">Enviar Resposta</button>
+             <div class="clearfix"></div>
+        </div>
+
+        <div id="question-2">
+            <h2>Questão 2</h2>
+            <h3>Você:</h3>
+            <input id="question-2-answer-a" type="radio" name="favelang" value="4"> Defende o que acredita, mesmo quando tentam te intimidar.<br>
+  			<input id="question-2-answer-b" type="radio" name="favelang" value="2"> Tem um grande poder de concentração.<br>
+  			<input id="question-2-answer-c" type="radio" name="favelang" value="3"> É criativo e sensível.<br>
+            <input id="question-2-answer-d" type="radio" name="favelang" value="1"> Faz amigos com facilidade.<br>
+            <input id="question-2-answer-e" type="radio" name="favelang" value="5"> Com você missão dada e missão cumprida - sempre termina (e bem!) o que se propõe a fazer.<br>
+                 <div id="submit2"></div>
+                 <button onclick="nextQuestion()">Enviar Resposta</button>
+           <div class="clearfix"></div>
+        </div>
+
+        <div id="question-3">	
+            <h2>Questão 3</h2>
+            <h3> Imagine que seu colega de trabalho está discutindo com você e acaba te chamando de idiota, o que você faz?</h3>
+          <input id="question-3-answer-a" type="radio" name="favelang" value="3"> Fica irritado e responde com agressividade. Caso o colega se desculpe deixa pra lá.<br>
+            <input id="question-3-answer-b" type="radio" name="favelang" value="1"> Não dá a mínima, acha que o colega já perdeu a razão.<br>
+            <input id="question-3-answer-c" type="radio" name="favelang" value="5"> Fica constrangido, magoado e não responde. Para que aumentar a discussão?<br>
+            <input id="question-3-answer-d" type="radio" name="favelang" value="4"> Retruca alguma coisa mas não dá muita importância, passa o tempo e você nem lembra mais.<br>
+            <input id="question-3-answer-e" type="radio" name="favelang" value="2"> Fica furioso e revida. Mesmo que o colega se desculpe fica magoado.<br>
+            <div id="submit3"></div>
+            <button onclick="nextQuestion()">Enviar Resposta</button>
+    <div class="clearfix"></div>
+        </div>
+
+        <div id="question-4">
+            <h2>Questão 4</h2>
+            <h3>As pessoas te acham:</h3>
+            <input id="question-1-answer-a" type="radio" name="favelang" value="5"> Competente e diligente. <br>
+            <input id="question-1-answer-b" type="radio" name="favelang" value="2"> Calmo e tranquilo.<br>
+            <input id="question-1-answer-c" type="radio" name="favelang" value="4"> Bem intencionado e transparente.<br>
+            <input id="question-1-answer-d" type="radio" name="favelang" value="3"> Bem humorado e divertido.<br>
+            <input id="question-1-answer-e" type="radio" name="favelang" value="1"> Misterioso e comprometido.<br>
+            <div id="submit4"></div>
+            <button onclick="nextQuestion()">Enviar Resposta</button>
+            <div class="clearfix"></div>
+        </div>
+
+        <div id="question-5">
+            <h2>Questão 5</h2>
+            <h3>Voce é aquele que:</h3>
+            <input id="question-1-answer-a" type="radio" name="favelang" value="4"> Toma a frente das situações.<br>
+            <input id="question-1-answer-b" type="radio" name="favelang" value="2"> Dificilmente perde a paciência.<br>
+            <input id="question-1-answer-c" type="radio" name="favelang" value="3"> Tem muita empatia com os demais.<br>
+            <input id="question-1-answer-d" type="radio" name="favelang" value="1"> Sabe contar uma boa historia.<br>
+            <input id="question-1-answer-e" type="radio" name="favelang" value="5"> Tem foco e disciplina.<br>
+            <div id="submit5"></div>
+            <button onclick="nextQuestion()">Enviar Resposta</button>
+            <div class="clearfix"></div>
+        </div>
+
+        
+        <div id="question-6">
+            <h2>Questão 6</h2>
+            <h3>O que você não faz de jeito nenhum?</h3>
+            <input id="question-1-answer-a" type="radio" name="favelang" value="3"> Me calar com o que não concordo.<br>
+            <input id="question-1-answer-b" type="radio" name="favelang" value="1"> Gritar e perder totalmente o controle.<br>
+            <input id="question-1-answer-c" type="radio" name="favelang" value="2"> Bulling ou brincadeiras de mau gosto.<br>
+            <input id="question-1-answer-d" type="radio" name="favelang" value="5"> Acabar com amizades por pequenas ofensas.<br>
+            <input id="question-1-answer-e" type="radio" name="favelang" value="4"> Me submeter a situações que não concordo.<br>
+            <div id="submit6"></div>
+            <button onclick="nextQuestion()">Enviar Resposta</button>
+            <div class="clearfix"></div>
+        </div>
+
+        <div id="question-7">
+            <h2>Questão 7</h2>
+            <h3>Nenhuma das opções abaixo é boa mas o que te incomoda mais:</h3>
+            <input id="question-1-answer-a" type="radio" name="favelang" value="2"> Ser ignorado.<br>
+            <input id="question-1-answer-b" type="radio" name="favelang" value="5"> Ser interrompido.<br>
+            <input id="question-1-answer-c" type="radio" name="favelang" value="4"> Rirem de você.<br>
+            <input id="question-1-answer-d" type="radio" name="favelang" value="1"> Ser excluído.<br>
+            <input id="question-1-answer-e" type="radio" name="favelang" value="3"> Ser julgado.<br>
+            <div id="submit7"></div>
+            <button onclick="nextQuestion()">Enviar Resposta</button>
+            <div class="clearfix"></div>
+        </div>
+
+        <div id="question-8">
+            <h2>Questão 8</h2>
+            <h3> Como é a sua rotina</h3>
+            <input id="question-1-answer-a" type="radio" name="favelang" value="5"> Sei exatamente o que fazer o dia inteiro e sou rígido.<br>
+            <input id="question-1-answer-b" type="radio" name="favelang" value="4"> Faço apenas o que me comprometi com outras pessoas, sozinho perco a motivação.<br>
+            <input id="question-1-answer-c" type="radio" name="favelang" value="1"> Tenho dificuldade em manter rotinas. Se me empolgo com algo passo horas fazendo com muita energia mas, se me deprimo, não faço mais nada.<br>
+            <input id="question-1-answer-d" type="radio" name="favelang" value="3"> Mantenho a minha rotina mas não sou rígido.<br>
+            <input id="question-1-answer-e" type="radio" name="favelang" value="2"> Se estou fazendo um trabalho sou constante e não paro até terminar. Se não tenho novas tarefas, fico perdido.<br>
+            <div id="submit8"></div>
+            <button onclick="nextQuestion()">Enviar Resposta</button>
+            <div class="clearfix"></div>
+        </div>
+
+        <div id="question-9">
+            <h2>Questão 9</h2>
+            <h3>  Ao cozinhar você</h3>
+            <input id="question-1-answer-a" type="radio" name="favelang" value="4"> Sigo a receita rigidamente.<br>
+            <input id="question-1-answer-b" type="radio" name="favelang" value="2"> Fico um pouco inseguro, nunca sei se a receita vai sair igual.<br>
+            <input id="question-1-answer-c" type="radio" name="favelang" value="5"> Gosto de entender a receita mas criar minhas próprias versões. Se preciso seguir a receita a risca posso ficar entediado.<br>
+            <input id="question-1-answer-d" type="radio" name="favelang" value="1"> Sigo a receita mas vou dando o meu toque e improvisando.<br>
+            <input id="question-1-answer-e" type="radio" name="favelang" value="3"> Se preciso, não tenho dificuldades de seguir os passos da receita.<br>
+            <div id="submit9"></div>
+            <button onclick="nextQuestion()">Enviar Resposta</button>
+            <div class="clearfix"></div>
+        </div>
+
+        <div id="question-10">
+            <h2>Questão 10</h2>
+            <h3>  Ninguém é perfeito e, às vezes, às pessoas reclamam que você é:</h3>
+            <input id="question-1-answer-a" type="radio" name="favelang" value="3"> Teimoso.<br>
+            <input id="question-1-answer-b" type="radio" name="favelang" value="2"> Procrastinador.<br>
+            <input id="question-1-answer-c" type="radio" name="favelang" value="5"> Vive em altos e baixos.<br>
+            <input id="question-1-answer-d" type="radio" name="favelang" value="4"> Mandão.<br>
+            <input id="question-1-answer-e" type="radio" name="favelang" value="1"> Esquecido.<br>
+            <div id="submit10"></div>
+            <button onclick="nextQuestion()">Enviar Resposta</button>
+            <div class="clearfix"></div>
+        </div>
+
+        <div id="question-11">
+            <h2>Questão 11</h2>
+            <h3>  Mas, também é:</h3>
+            <input id="question-1-answer-a" type="radio" name="favelang" value="3"> Organizado, prático e estável emocionalmente.<br>
+            <input id="question-1-answer-b" type="radio" name="favelang" value="5"> Analista, cuidadoso e sensível.<br>
+            <input id="question-1-answer-c" type="radio" name="favelang" value="1"> Intuitivo, sensível e criativo.<br>
+            <input id="question-1-answer-d" type="radio" name="favelang" value="2"> Cheio de energia, prático e decidido.<br>
+            <input id="question-1-answer-e" type="radio" name="favelang" value="4"> Estável emocionalmente, compreensivo e racional.<br>
+            <div id="submit11"></div>
+            <button onclick="nextQuestion()">Enviar Resposta</button>
+            <div class="clearfix"></div>
+        </div>
+
+        <div id="question-12">
+            <h2>Questão 12</h2>
+            <h3>  O que você faz se chega em uma festa e não encontra nenhum conhecido?</h3>
+            <input id="question-1-answer-a" type="radio" name="favelang" value="5"> Sou extrovertido, converso com quem estiver por perto e faço amigos.<br>
+            <input id="question-1-answer-b" type="radio" name="favelang" value="1"> Procuro uma pessoa conhecida.<br>
+            <input id="question-1-answer-c" type="radio" name="favelang" value="3"> Depende: se eu estiver de bom humor puxo assunto com alguém ou procuro um conhecido, senão, fico na minha.<br>
+            <input id="question-1-answer-d" type="radio" name="favelang" value="4"> Espero algum conhecido vir falar comigo.<br>
+            <input id="question-1-answer-e" type="radio" name="favelang" value="2"> Vou embora<br>
+            <div id="submit12"></div>
+            <button onclick="nextQuestion()">Enviar Resposta</button>
+            <div class="clearfix"></div>
+        </div>
+
+        <div id="question-13">
+            <h2>Questão 13</h2>
+            <h3>  Quando tem um objetivo, você:</h3>
+            <input id="question-1-answer-a" type="radio" name="favelang" value="4"> Sou um pouco indisciplinado, nada de esquentar a cabeça.<br>
+            <input id="question-1-answer-b" type="radio" name="favelang" value="2"> Sou determinado, disciplinado e eficiente.<br>
+            <input id="question-1-answer-c" type="radio" name="favelang" value="1"> Extremamente perfeccionista e persistente.<br>
+            <input id="question-1-answer-d" type="radio" name="favelang" value="5"> Faço as coisas no meu tempo, sem estresse.<br>
+            <input id="question-1-answer-e" type="radio" name="favelang" value="3"> Apenas sonho sem correr atrás.<br>
+            <div id="submit13"></div>
+            <button onclick="nextQuestion()">Enviar Resposta</button>
+            <div class="clearfix"></div>
+        </div>
+
+        <div id="question-14">
+            <h2>Questão 14</h2>
+            <h3>  Em uma discussão você:</h3>
+            <input id="question-1-answer-a" type="radio" name="favelang" value="2"> Sou impulsivo, falo antes de pensar.<br>
+            <input id="question-1-answer-b" type="radio" name="favelang" value="1"> Argumento muito bem mas sou um pouco agressivo.<br>
+            <input id="question-1-answer-c" type="radio" name="favelang" value="3"> Sou analítico e cauteloso nos meus argumentos.<br>
+            <input id="question-1-answer-d" type="radio" name="favelang" value="5"> Evito discussões mas, se não tiver remédio, sou apaziguador.<br>
+            <input id="question-1-answer-e" type="radio" name="favelang" value="4"> Agressivo, expondo minhas ideias sem medo<br>
+            <div id="submit14"></div>
+            <button onclick="nextQuestion()">Enviar Resposta</button>
+            </div>
+            <div class="clearfix"></div>
+        </div> 
+
+        <div id="question-15">
+            <h2>Questão 15</h2>
+            <h3>  Nas suas relações você é:</h3>
+            <input id="question-1-answer-a" type="radio" name="favelang" value="3"> Caloroso e amigável.<br>
+            <input id="question-1-answer-b" type="radio" name="favelang" value="4"> Dominante, gosto de estar no controle.<br>
+            <input id="question-1-answer-c" type="radio" name="favelang" value="5"> Sensível, levo muito em consideração o sentimento alheio.<br>
+            <input id="question-1-answer-d" type="radio" name="favelang" value="2"> Um pouco frio mas de fácil convivência.<br>
+            <input id="question-1-answer-e" type="radio" name="favelang" value="1"> Retraído e submisso<br>
+            <div id="submit15"></div>
+            <button onclick="nextQuestion()">Enviar Resposta</button>
+            <div class="clearfix"></div>
+        </div> 
+
+        <div id="question-16">
+            <h2>Questão 16</h2>
+            <h3>   Qual defeito tem mais a ver com você?</h3>
+            <input id="question-1-answer-a" type="radio" name="favelang" value="2"> Desorganizado<br>
+            <input id="question-1-answer-b" type="radio" name="favelang" value="3"> Agressivo.<br>
+            <input id="question-1-answer-c" type="radio" name="favelang" value="1"> Inseguro.<br>
+            <input id="question-1-answer-d" type="radio" name="favelang" value="5"> Desmotivado.<br>
+            <input id="question-1-answer-e" type="radio" name="favelang" value="4"> Reclamão<br>
+            <div id="submit16"></div>
+            <button onclick="nextQuestion()">Enviar Resposta</button>
+            <div class="clearfix"></div>
+        </div> 
+
+        <div id="question-17">
+            <h2>Questão 17</h2>
+            <h3> Você…</h3>
+            <input id="question-1-answer-a" type="radio" name="favelang" value="4"> Consegue identificar facilmente o humor das pessoas.<br>
+            <input id="question-1-answer-b" type="radio" name="favelang" value="1"> Raramente chora.<br>
+            <input id="question-1-answer-c" type="radio" name="favelang" value="5"> Gosta de assuntos ligados a arte (música, dança ou desenhos).<br>
+            <input id="question-1-answer-d" type="radio" name="favelang" value="2"> Dificilmente se irrita.<br>
+            <input id="question-1-answer-e" type="radio" name="favelang" value="3"> Gosta de esportes (Futebol, Skate, Natação, etc..)<br>
+            <div id="submit17"></div>
+            <button onclick="nextQuestion()">Enviar Resposta</button>
+            <div class="clearfix"></div>
+        </div> 
+
+        <div id="question-18">
+            <h2>Questão 18</h2>
+            <h3> Nas amizades, você…</h3>
+            <input id="question-1-answer-a" type="radio" name="favelang" value="2"> Tem muitos amigos.<br>
+            <input id="question-1-answer-b" type="radio" name="favelang" value="5"> É dominante: seus amigos te classificam como mandão.<br>
+            <input id="question-1-answer-c" type="radio" name="favelang" value="1"> É um amigo fiel mas tem dificuldade em fazer amizades.<br>
+            <input id="question-1-answer-d" type="radio" name="favelang" value="4"> Não tem muitos amigos, mas é bastante tranquilo quanto a isso.<br>
+            <input id="question-1-answer-e" type="radio" name="favelang" value="3"> Poucos amigos próximos, mas crio conexão fácil.<br>
+            <div id="submit18"></div>
+            <button onclick="nextQuestion()">Enviar Resposta</button>
+            <div class="clearfix"></div>
+        </div> 
+
+        <div id="question-19">
+            <h2>Questão 19</h2>
+            <h3> Você é bom em:</h3>
+            <input id="question-1-answer-a" type="radio" name="favelang" value="1"> Contar histórias: consigo prender a atenção das pessoas.<br>
+            <input id="question-1-answer-b" type="radio" name="favelang" value="2"> Debates: não vacilo sob a pressão dos outros.<br>
+            <input id="question-1-answer-c" type="radio" name="favelang" value="3"> Sou ótimo para analisar situações e tomar decisões.<br>
+            <input id="question-1-answer-d" type="radio" name="favelang" value="4"> Diplomata: sempre consigo manter a paz na relação com as pessoas.<br>
+            <input id="question-1-answer-e" type="radio" name="favelang" value="5"> Causar o caos e discórdia.<br>
+            <div id="submit19"></div>
+            <button onclick="nextQuestion()">Enviar Resposta</button>
+            <div class="clearfix"></div>
+        </div> 
+
+        
+        <div id="question-20">
+            <h2>Questão 20</h2>
+            <h3> Os desafios:</h3>
+            <input id="question-1-answer-a" type="radio" name="favelang" value="3"> Te movem.<br>
+            <input id="question-1-answer-b" type="radio" name="favelang" value="4"> Te preocupam.<br>
+            <input id="question-1-answer-c" type="radio" name="favelang" value="5"> Te empolgam.<br>
+            <input id="question-1-answer-d" type="radio" name="favelang" value="2"> Não te abalam.<br>
+            <input id="question-1-answer-e" type="radio" name="favelang" value="1"> Te desmotivam<br>
+            <div id="submit20"></div>
+            <button onclick="nextQuestion()">Enviar Resposta</button>
+            <div class="clearfix"></div>
+        </div>
+
+        <div id="question-21"> 
+            <h2>Seu resultado é:</h2>
+            <h1 id=printtotalscore></h1>
+            <p id=printscoreinfo></p>
+        </div>
+
+
+
+        </form>
+        </div>
+    </div>
+</div>
+<script src="JS/script.js"></script>
+    </body>
+</html>
